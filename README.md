@@ -35,16 +35,16 @@ entity file
 
 #### Our Method
 
-Our proposed method, with a specific entity, a predicate and a type of target entity, can be run using the following command:
+Our proposed method, with a specific entity, a predicate, a type of target entity and a aggregate function, can be run using the following command:
 
 ```
-java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entity-type>
+java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entity-type> <aggregate-function>
 ```
 
 For the query example, "How many software has been developed by organizations founded in California?", we can run with the following command:
 
 ```
-java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar California foundationPlace software
+java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar California foundationPlace software COUNT
 ```
 
 Output
@@ -70,16 +70,16 @@ Response Time (ms) : 235ms
 To run the baseline algorithm, we need to run it using the following command:
 
 ```
-java -jar BaseLineSGQ-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type>
-java -jar BaseLineGraB-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type>
-java -jar BaseLineQGA-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type>
-python BaseLineEAQ.py <a-specific-entity> <target-entities-type>
+java -jar BaseLineSGQ-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type> <aggregate-function>
+java -jar BaseLineGraB-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type> <aggregate-function>
+java -jar BaseLineQGA-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type> <aggregate-function>
+python BaseLineEAQ.py <a-specific-entity> <target-entities-type> <aggregate-function>
 ```
 
 For example:
 
 ```
-java -jar BaseLineSGQ-jar-with-dependencies.jar California foundationPlace software
+java -jar BaseLineSGQ-jar-with-dependencies.jar California foundationPlace software COUNT
 ```
 
 Output
@@ -100,13 +100,13 @@ Response Time (ms) : 405ms
 The effect of each phase on the performance (Section 8.3 of our paper) can be demonstrated using the command below(Use S1, S2 and S3 to represent each phase):
 
 ```
-java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type> <which-phase>
+java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type> <aggregate-function> <which-phase>
 ```
 
 For example, we can specific \<which-phase\> as S1 to see the effect of S1 on our method for each query.
 
 ```
-java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar California foundationPlace software S1
+java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar California foundationPlace software COUNT S1
 ```
 
 Output
@@ -132,13 +132,13 @@ Response Time (ms) : 501ms
 As mentioned in Section 8.4 of our paper, we studied the sensitivity of our approach on some important parameters, including the user-specific error bound e, confidence level 1-α, repeat factor r, and desired sample ratio λ, we need to run it using the following command:
 
 ```
-java -jar ParameterSensitivity-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type> <error-bound> <confidence-level> <repeat-factor> <desired-sample-ratio>
+java -jar ParameterSensitivity-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type> <aggregate-function> <error-bound> <confidence-level> <repeat-factor> <desired-sample-ratio>
 ```
 
 For example:
 
 ```
-java -jar ParameterSensitivity-jar-with-dependencies.jar California foundationPlace software 0.01 0.95 3 0.3
+java -jar ParameterSensitivity-jar-with-dependencies.jar California foundationPlace software COUNT 0.01 0.95 3 0.3
 ```
 
 Output
@@ -164,13 +164,13 @@ Response Time (ms) : 235ms
 We studied our interactive performance of our method by reducing the user-specific error bound during the query processing, we need to run it using the following command:
 
 ```
-java -jar InteractivePerformance-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type>
+java -jar InteractivePerformance-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type> <aggregate-function>
 ```
 
 For example:
 
 ```
-java -jar InteractivePerformance-jar-with-dependencies.jar California foundationPlace software
+java -jar InteractivePerformance-jar-with-dependencies.jar California foundationPlace software COUNT
 ```
 
 Output
