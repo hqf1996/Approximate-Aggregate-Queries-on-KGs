@@ -129,7 +129,7 @@ Response Time (ms) : 501ms
 
 ### Parameter Sensitivity
 
-As mentioned in Section 8.4 of our paper, we studied the sensitivity of our approach on some important parameters, including the user-specific error bound $e$, confidence level $1-\alpha$, repeat factor $r$, and desired sample ratio $\lambda$, we need to run it using the following command:
+As mentioned in Section 8.4 of our paper, we studied the sensitivity of our approach on some important parameters, including the user-specific error bound e, confidence level 1-α, repeat factor r, and desired sample ratio λ, we need to run it using the following command:
 
 ```
 java -jar ParameterSensitivity-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type> <error-bound> <confidence-level> <repeat-factor> <desired-sample-ratio>
@@ -143,7 +143,7 @@ java -jar ParameterSensitivity-jar-with-dependencies.jar California foundationPl
 
 Output
 
-For each parameter, it will output the following statistical results and running time. Here is the output for user-specific error bound $e=0.01$, confidence level $1-\alpha=0.95$, repeat factor $r=3$, and desired sample ratio $\lambda=0.3$:
+For each parameter, it will output the following statistical results and running time. Here is the output for user-specific error bound e=0.01, confidence level 1-α=0.95, repeat factor r=3, and desired sample ratio λ=0.3:
 
 ```
 Ground-truth : 124
