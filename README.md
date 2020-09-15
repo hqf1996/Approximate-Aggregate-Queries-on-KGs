@@ -10,7 +10,7 @@ The experiments have been run on an CentOS Linux release 7.3.1611 computer with 
 
 ## Input Data
 
-[DBpedia dataset](https://drive.google.com/drive/folders/1fQEbz7tmcbe8R3sTO_LwJ9LVBDtqlyph?usp=sharing), [Freebase dataset](https://drive.google.com/drive/folders/1wZSbxF_x2DSJWiMf5sW9WnJ1NW_RR3IG?usp=sharing), [Yago dataset](https://drive.google.com/drive/folders/1wZSbxF_x2DSJWiMf5sW9WnJ1NW_RR3IG?usp=sharing)
+[DBpedia dataset](https://drive.google.com/drive/folders/1fQEbz7tmcbe8R3sTO_LwJ9LVBDtqlyph?usp=sharing), [Freebase dataset](https://drive.google.com/drive/folders/1wZSbxF_x2DSJWiMf5sW9WnJ1NW_RR3IG?usp=sharing), [Yago dataset](https://drive.google.com/drive/folders/1Q35R1RImlZPYwTdBwXyvGSj-4aWIONb_?usp=sharing)
 
 The experiment uses `QALD-4`, `WebQuestions`, and `Synthetic queries` as [benchmarks](https://drive.google.com/drive/folders/19T1Th9G4HcffIhAbaCHqOJPxeWElOy51?usp=sharing) for DBpedia, Freebase, and Yago datasets, respectively.
 
