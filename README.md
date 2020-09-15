@@ -49,7 +49,7 @@ java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar California f
 
 Output
 
-For our method, it will output the following statistical results and running time, here is the output of the above query example:
+For our method, it will output the following statistical results and running time. Here is the output of the above query example:
 
 ```
 Ground-truth : 124
@@ -84,7 +84,7 @@ java -jar BaseLineSGQ-jar-with-dependencies.jar California foundationPlace softw
 
 Output
 
-For each method, they will output the following statistical results and running time respectively, here is the output of SGQ for the above query example:
+For each method, it will output the following statistical results and running time respectively. Here is the output of SGQ for the above query example:
 
 ```
 Ground-truth : 124
@@ -111,7 +111,7 @@ java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar California f
 
 Output
 
-For each phase, it will output the following statistical results and running time, here is the output when we change S1 from our semantic-aware random walk smapling to CNARW:
+For each phase, it will output the following statistical results and running time. Here is the output when we change S1 from our semantic-aware random walk smapling to CNARW:
 
 ```
 Ground-truth : 124
@@ -143,7 +143,7 @@ java -jar ParameterSensitivity-jar-with-dependencies.jar California foundationPl
 
 Output
 
-For each parameter, it will output the following statistical results and running time, here is the output for user-specific error bound $e=0.01$, confidence level $1-\alpha=0.95$, repeat factor $r=3$, and desired sample ratio $\lambda=0.3$:
+For each parameter, it will output the following statistical results and running time. Here is the output for user-specific error bound $e=0.01$, confidence level $1-\alpha=0.95$, repeat factor $r=3$, and desired sample ratio $\lambda=0.3$:
 
 ```
 Ground-truth : 124
@@ -175,7 +175,7 @@ java -jar InteractivePerformance-jar-with-dependencies.jar California foundation
 
 Output
 
-For each reduction, it will output the following additional runtime, here is the output of the above query example:
+For each reduction, it will output the following additional runtime. Here is the output of the above query example:
 
 ```
 -------------------user-specific error bound reduce from 0.05 to 0.04-------------------
