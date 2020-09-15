@@ -103,7 +103,7 @@ The effect of each phase on the performance (Section 8.3 of our paper) can be de
 java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar <a-specific-entity> <a-predicate> <target-entities-type> <which-phase>
 ```
 
-For example, we can specific <which-phase> as S1 to see the effect of S1 on our method for each query.
+For example, we can specific \<which-phase\> as S1 to see the effect of S1 on our method for each query.
 
 ```
 java -jar Approximate-Aggregation-Queries-jar-with-dependencies.jar California foundationPlace software S1
